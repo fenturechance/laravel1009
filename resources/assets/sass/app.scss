@@ -7,7 +7,9 @@
 
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
-
+*{
+    font-family: '微軟正黑體';
+}
 .nav > li > a > img{
     border-radius: 50%;
     width: 30px;
