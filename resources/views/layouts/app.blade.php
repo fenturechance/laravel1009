@@ -34,16 +34,17 @@
                         <span class="icon-bar"></span>
                     </button>
 
-                    <!-- Branding Image -->
+                    <!-- Branding Image 商標-->
                     <a class="navbar-brand" href="{{ url('/home') }}">
                         {{ config('app.name', 'Laravel') }}
                     </a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="nav navbar-nav">
-                        &nbsp;
+                    <!-- Left Side Of Navbar 左側選單-->
+                    <ul class="nav navbar-nav mt-5">
+                        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">Link</a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -55,7 +56,7 @@
                         @else
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                    <img src="{{ asset('img/img.jpg') }}">
+                                    <img src="{{ asset('img/img.jpg') }}" width="30" height="30" class="d-inline-block align-top">
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 

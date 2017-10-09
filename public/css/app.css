@@ -7671,9 +7671,11 @@ button.close {
 }
 
 .nav > li > a > img {
-  width: 30px;
-  height: 30px;
   border-radius: 50%;
+}
+
+.navbar-default .navbar-nav > li > a.dropdown-toggle {
+  padding: 10px;
 }
 
 /*# sourceMappingURL=app.css.map */
