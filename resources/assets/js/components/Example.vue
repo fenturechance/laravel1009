@@ -53,7 +53,12 @@
         },
         methods: {
             submitMessage (){
-                console.log(this.message);
+                let vm = this;
+                vm.messages.unshift({
+                    username: vm.username,
+                    message: vm.message,
+                });
+                vm.message='';
             }
         }
     }
