@@ -2,11 +2,18 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <div class="panel panel-default">
+                <div class="panel panel-primary">
                     <div class="panel-heading">Example Component</div>
-
                     <div class="panel-body">
-                        I'm an example component!
+                        <div class="media">
+                            <div class="media-left">
+                                <img src="http://fakeimg.pl/100x100/0088b2/fff/?text=A" class="media-object" style="width:60px">
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">John Doe</h4>
+                                <p>Lorem ipsum...</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -17,7 +24,24 @@
 <script>
     export default {
         ready() {
-            console.log('Component ready.')
+
+        },
+        data() {
+            return {
+                messages: [{
+                        username: 'Casper',
+                        message: '哈囉你好'
+                    },
+                    {
+                        username: 'Jerry',
+                        message: '你也好'
+                    }
+                ]
+            }
         }
     }
 </script>
+
+<style scoped>
+
+</style>
