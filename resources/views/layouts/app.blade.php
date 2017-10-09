@@ -45,6 +45,8 @@
                     <ul class="nav navbar-nav mt-5">
                         <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
                         <li><a href="#">Link</a></li>
+                        <li><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">Link</a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -54,9 +56,11 @@
                             <li><a href="{{ url('/login') }}">Login</a></li>
                             <li><a href="{{ url('/register') }}">Register</a></li>
                         @else
+                            <li><a href="" class="rightmenu"><span class="circleWord">A</span></a></li>
+                            {{--  會員資訊  --}}
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                    <img src="{{ asset('img/img.jpg') }}" width="30" height="30" class="d-inline-block align-top">
+                                <a href="#" class="dropdown-toggle rightmenu" data-toggle="dropdown" role="button" aria-expanded="false">
+                                    <img src="{{ asset('img/img.jpg') }}" class="d-inline-block align-top">
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
