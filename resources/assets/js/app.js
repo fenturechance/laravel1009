@@ -14,6 +14,7 @@ require('./bootstrap');
  */
 
 Vue.component('example', require('./components/Example.vue'));
+Vue.component('sorts', require('./components/Sorts.vue'));
 
 const app = new Vue({
     el: 'body'
